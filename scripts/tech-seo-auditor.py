@@ -32,7 +32,7 @@ from urllib.parse import urlparse
 
 ALL_CHECKS = {"status", "redirects", "meta", "headers", "security", "speed_hints"}
 MAX_REDIRECTS = 10
-USER_AGENT = "TechSEOAuditor/1.0 (+https://github.com/indranilbanerjee/digital-marketing-pro)"
+USER_AGENT = "TechSEOAuditor/1.0 (+https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu)"
 
 
 # ---------------------------------------------------------------------------

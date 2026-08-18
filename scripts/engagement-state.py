@@ -34,7 +34,7 @@ Usage:
 
 All commands print JSON output to stdout; errors go to stderr with exit code 1.
 
-Author: Indranil Banerjee
+Author: Indus Net TechShu Digital Pvt. Ltd.
 Plugin: Digital Marketing Pro
 """
 

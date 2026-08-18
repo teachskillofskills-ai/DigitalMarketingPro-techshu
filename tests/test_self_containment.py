@@ -47,7 +47,7 @@ FILE_ALLOWLIST = {
 # Line-level allowlist: cross-promotion is fine anywhere. A line mentioning a
 # sibling is allowed only if it is clearly promo/infra, i.e. contains one of:
 LINE_ALLOW_MARKERS = (
-    "github.com/indranilbanerjee/",  # links to the author's other repos
+    "github.com/teachskillofskills-ai/",  # links to the sibling TechShu repos
     "/plugin install",               # marketplace install commands
 )
 

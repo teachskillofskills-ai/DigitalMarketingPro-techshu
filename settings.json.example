@@ -15,7 +15,7 @@
 
   "_plugin_suggestion_marketplaces_comment": "Managed-setting allowlist (v2.1.152) for org-approved plugin marketplaces. Useful for agencies that want to restrict which marketplaces team members can install from.",
   "pluginSuggestionMarketplaces": [
-    "indranilbanerjee/neels-plugins"
+    "teachskillofskills-ai/techshu-marketplace"
   ],
 
   "_evolink_comment": "EvoLink (evolink.ai) is a multi-provider API gateway — one key unlocks GPT-5, DeepSeek V4, Doubao Seed 2.0, MiniMax M3, and more. The model curator scripts (resolve_model.py, refresh_models.py) read EVOLINK_API_KEY from the environment (NOT from this settings file — set it in your shell profile or .env). Use --vendor evolink to list Evolink-curated models. Aliases: latest-text-evolink / latest-balanced-evolink / latest-fast-evolink. See docs/MODEL-CURATOR.md.",

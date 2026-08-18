@@ -9,7 +9,7 @@ openclaw.plugin.json (and falls back to the .claude-plugin/ bundle).
 
 What this does
 --------------
-When Hermes Agent loads us via `hermes plugins install indranilbanerjee/digital-marketing-pro`,
+When Hermes Agent loads us via `hermes plugins install teachskillofskills-ai/DigitalMarketingPro-techshu`,
 it clones the repo into ~/.hermes/plugins/digital-marketing-pro/, reads plugin.yaml
 at the root, then calls register(ctx) below. The register() walks the skills/
 directory, discovers every SKILL.md, and exposes each one to Hermes via

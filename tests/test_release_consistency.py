@@ -78,7 +78,7 @@ class TestVersionConsistency(unittest.TestCase):
                          f".grok-plugin/marketplace.json v={entry['version']} "
                          f"!= canonical v={self.canonical}")
         self.assertEqual(entry["source"]["url"],
-                         "https://github.com/indranilbanerjee/digital-marketing-pro.git",
+                         "https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu.git",
                          "Grok marketplace source must point at this repo")
 
     def test_hermes_plugin_yaml_matches_canonical_version(self):
@@ -300,7 +300,7 @@ class TestInstallCommandCoverage(unittest.TestCase):
         cls.text = README.read_text(encoding="utf-8")
 
     def test_claude_code_install_command_present(self):
-        self.assertIn("/plugin install digital-marketing-pro@neels-plugins", self.text)
+        self.assertIn("/plugin install digital-marketing-pro@techshu", self.text)
 
     def test_codex_install_command_present(self):
         self.assertIn("codex plugin install digital-marketing-pro", self.text)
@@ -315,16 +315,16 @@ class TestInstallCommandCoverage(unittest.TestCase):
         self.assertIn("agy plugin install", self.text)
 
     def test_hermes_install_command_present(self):
-        self.assertIn("hermes plugins install indranilbanerjee/digital-marketing-pro", self.text)
+        self.assertIn("hermes plugins install teachskillofskills-ai/DigitalMarketingPro-techshu", self.text)
 
     def test_openclaw_install_command_present(self):
         self.assertIn(
-            "openclaw plugins install git:github.com/indranilbanerjee/digital-marketing-pro",
+            "openclaw plugins install git:github.com/teachskillofskills-ai/DigitalMarketingPro-techshu",
             self.text
         )
 
     def test_grok_install_command_present(self):
-        self.assertIn("grok plugin install indranilbanerjee/digital-marketing-pro", self.text)
+        self.assertIn("grok plugin install teachskillofskills-ai/DigitalMarketingPro-techshu", self.text)
 
 
 class TestCriticalReadmeSections(unittest.TestCase):

@@ -26,7 +26,7 @@ Prepared 2026-08-16. Items marked **[owner action]** need the account holder.
   compliance. 108 of the 163 execute real scripts; a machine-verified depth
   contract keeps the promises honest, and a run auditor re-derives the content
   engine's gates before "ready" may be declared.
-- **Homepage / repo:** https://github.com/indranilbanerjee/digital-marketing-pro
+- **Homepage / repo:** https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu
 - **License:** MIT
 - **Policy note for reviewers:** vendor-neutral by hard rule — no hardcoded
   model ids, prices, or vendors anywhere (test-guarded); capability kinds are

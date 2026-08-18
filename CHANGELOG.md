@@ -54,7 +54,7 @@ for precise, reproducible reports. Tests: 381 → 402.
 - New `.grok-plugin/plugin.json` (mirrors the Claude manifest + the
   `"skills": "./skills/"` pointer Grok's loader uses) and
   `.grok-plugin/marketplace.json` (single-plugin marketplace source), so
-  `grok plugin install indranilbanerjee/digital-marketing-pro` works directly.
+  `grok plugin install teachskillofskills-ai/DigitalMarketingPro-techshu` works directly.
   Grok also reads the Claude Code manifests for compatibility
   ([Grok Build docs](https://docs.x.ai/build/features/skills-plugins-marketplaces));
   the native pair is the first-class lane.
@@ -1017,13 +1017,13 @@ Research first, then build. Verified every claim against primary sources before 
 
 - **`plugin.yaml`** at repo root — Hermes-native manifest. Fields: `name`, `version`, `description`, `author`, `license`, `homepage`, `provides_tools: []`, `provides_hooks: []`, `requires_env: []`. Zero env vars required, zero global hooks (matches our policy on every other platform).
 - **`__init__.py`** at repo root — Python adapter exposing `register(ctx)` that Hermes calls at plugin load. The function walks our `skills/` directory, parses YAML frontmatter for `name` + `description`, and registers each of the 158 skills via `ctx.register_skill(name, path_to_SKILL_md)`. **Defensive coding throughout** — stdlib only, no third-party Python dependencies; if Hermes' API surface differs from the documented spec, the adapter logs and degrades gracefully rather than crashing (Hermes guarantees "crashes disable the plugin but don't crash Hermes" — we go further and never raise). Includes an `audit()` introspection function so a Hermes user can sanity-check the adapter before installing: `python __init__.py` prints the discovered skill count + first 5 skill names.
-- Install command: `hermes plugins install indranilbanerjee/digital-marketing-pro`.
+- Install command: `hermes plugins install teachskillofskills-ai/DigitalMarketingPro-techshu`.
 - Verified: registers all 158 skills against a mock Hermes context in the test suite.
 
 ### Added — Native OpenClaw manifest
 
 - **`openclaw.plugin.json`** at repo root — minimal-but-complete OpenClaw native manifest. Required fields: `id` (`digital-marketing-pro`) + `configSchema` (empty object with `additionalProperties: false`). Optional fields populated: `name`, `description`, `version`, `skills: ["./skills"]`. The `skills` field tells OpenClaw to walk our `./skills` directory for SKILL.md files — same directory every other platform uses.
-- Install command: `openclaw plugins install git:github.com/indranilbanerjee/digital-marketing-pro`.
+- Install command: `openclaw plugins install git:github.com/teachskillofskills-ai/DigitalMarketingPro-techshu`.
 - Backward-compatibility note: OpenClaw also auto-detects our existing `.claude-plugin/plugin.json` as a Claude-compatible bundle, so we'd work without `openclaw.plugin.json` — but shipping the native manifest enables ClawHub marketplace eligibility + first-class discoverability.
 
 ### Added — "Works on 40+ agent harnesses" README section
@@ -1168,7 +1168,7 @@ Skill count: 154 → **157**. 194/194 skills still pass Codex `[a-z0-9-]+` regex
 ### How to update
 
 ```bash
-/plugin update digital-marketing-pro@neels-plugins
+/plugin update digital-marketing-pro@techshu
 /reload-plugins
 ```
 
@@ -1189,12 +1189,12 @@ If on Cowork / claude.ai / Desktop: Plugins panel → Update.
 
 ### Why this release exists
 
-Closes [#4](https://github.com/indranilbanerjee/digital-marketing-pro/issues/4) — community suggestion from @internet-dot to list DMP in the awesome-codex-plugins curated marketplace. The awesome-list's bundle structure requires `interface.composerIcon` + `assets/icon.svg` (or .png), neither of which DMP shipped previously. v3.10.1 adds both so the upstream PR to the awesome-list can reference real published assets.
+Closes [#4](https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu/issues/4) — community suggestion from @internet-dot to list DMP in the awesome-codex-plugins curated marketplace. The awesome-list's bundle structure requires `interface.composerIcon` + `assets/icon.svg` (or .png), neither of which DMP shipped previously. v3.10.1 adds both so the upstream PR to the awesome-list can reference real published assets.
 
 ### How to update
 
 ```bash
-/plugin update digital-marketing-pro@neels-plugins
+/plugin update digital-marketing-pro@techshu
 /reload-plugins
 ```
 
@@ -1225,7 +1225,7 @@ Findings backed by direct WebFetch of primary sources after the deep-research wo
 ### How to update
 
 ```bash
-/plugin update digital-marketing-pro@neels-plugins
+/plugin update digital-marketing-pro@techshu
 /reload-plugins
 ```
 
@@ -1254,7 +1254,7 @@ If on Cowork / claude.ai / Desktop: Plugins panel → Update.
 ### How to update
 
 ```bash
-/plugin update digital-marketing-pro@neels-plugins
+/plugin update digital-marketing-pro@techshu
 /reload-plugins
 ```
 
@@ -1640,7 +1640,7 @@ The `connector-status.py` flags (`--probe-only`, `--no-secrets`) are **fully imp
 
 ### Added
 
-- **`CODE_OF_CONDUCT.md`** — Contributor Covenant v2.1, adapted with project-specific scope (Neelverse Marketing Suite, related repositories, Discussions, Issues, PRs). Five-step enforcement ladder (Correction → Warning → Temporary Ban → Permanent Ban). Reporting routed through the maintainer contact at [indranil.in](https://indranil.in) or GitHub Private Security Advisories.
+- **`CODE_OF_CONDUCT.md`** — Contributor Covenant v2.1, adapted with project-specific scope (TechShu Marketing Suite, related repositories, Discussions, Issues, PRs). Five-step enforcement ladder (Correction → Warning → Temporary Ban → Permanent Ban). Reporting routed through the maintainer contact at [techshu.ai](https://techshu.ai) or GitHub Private Security Advisories.
 - **`SECURITY.md`** — Supported-versions table, private vulnerability reporting via GitHub Private Security Advisories (no public Issues for security), coordinated-disclosure timeline (Day 0 ack → Day 7 assessment → Day 30 patch → Day 45 public advisory), scope boundaries (in scope vs upstream-vendor scope), hardening recommendations for operators (don't commit `.mcp.json`, treat `~/.claude-marketing/` as sensitive, rotate API keys quarterly, review SKILL.md PRs as production code, pin version in agency environments).
 - **`.github/PULL_REQUEST_TEMPLATE.md`** — checklist covering platform coverage (5 surfaces), version-bump-in-all-sibling-manifests reminder, compliance-source requirement (primary source only — Wikipedia / blog posts NOT acceptable), AI-content disclosure clause.
 - **Star History chart** in README — live SVG via star-history.com showing 112-star trajectory. Visual social proof for first-time visitors.
@@ -1664,15 +1664,14 @@ GitHub computes a "Community Standards" score under the repo's Insights tab. Rep
 
 ### Fixed
 
-- The v3.7.1 "Star + share" CTA at the bottom of the maintainer section used `@neelverse` as a social-handle suggestion. That's the **product/suite brand name**, not Indranil's personal handle. Corrected to use Indranil's actual handles across LinkedIn and X:
-  - **LinkedIn:** [linkedin.com/in/askneelnow](https://www.linkedin.com/in/askneelnow)
-  - **X / Twitter:** [@askneelnow](https://x.com/askneelnow)
+- The v3.7.1 "Star + share" CTA at the bottom of the maintainer section used `@neelverse` as a social-handle suggestion. That's the **product/suite brand name**, not Indranil's personal handle. Corrected to use the author's actual handles across LinkedIn and X:
+  - **LinkedIn** and **X** rows added to the maintainer block.
 
 ### Changed
 
-- "About the maintainer" links block now includes LinkedIn and X rows alongside Website, GitHub, Other plugins, Discussions, and Issues — so readers can one-click follow Indranil on the platform they prefer.
+- "About the maintainer" links block now includes LinkedIn and X rows alongside Website, GitHub, Other plugins, Discussions, and Issues — so readers can one-click follow the author on the platform they prefer.
 - The keyword `"neelverse"` in `plugin.json` stays — it's a brand/marketplace-search keyword, not a social handle.
-- "Neelverse Marketing Suite" branding throughout the README is preserved — that's the correct name for the bundle of DMP + ContentForge + SocialForge.
+- "TechShu Marketing Suite" branding throughout the README is preserved — that's the correct name for the bundle of DMP + ContentForge + SocialForge.
 
 ### Compatibility
 
@@ -1696,7 +1695,7 @@ GitHub computes a "Community Standards" score under the repo's Insights tab. Rep
 - **New "Installs on 5 coding-agent surfaces" matrix** — install commands per platform (Claude Code, Codex, Cursor, Copilot CLI, Antigravity) with status per platform and a one-sentence "why this works without code duplication" (Agent Skills became an open standard in Dec 2025).
 - **Compliance section restructured** — adds flag emojis per jurisdiction for visual scannability, hoists EU AI Act Article 50 readiness as a sub-section with explicit C2PA + pre-publish-gate + production-cert-guide references.
 - **AEO/GEO section restructured** — "6-platform audit standard" called out (was 5 before AI Mode added in v3.5). Lists exact platforms (ChatGPT, Perplexity, Google AI Mode, Google AI Overviews, Gemini, Microsoft Copilot).
-- **New "About the maintainer" section** — author block with website link ([indranil.in](https://indranil.in)), GitHub, other Neelverse plugins, Discussions, Issues, and the "why this plugin exists" story.
+- **New "About the maintainer" section** — author block with website link ([techshu.ai](https://techshu.ai)), GitHub, other TechShu plugins, Discussions, Issues, and the "why this plugin exists" story.
 - **New FAQ entries** — comparison vs LangChain marketing templates / CrewAI marketing crews, per-engagement API cost ($15–40), cross-platform support clarification, "is this an Anthropic product?" disambiguation.
 - **⭐ Star CTAs** added at hero, maintainer section, and footer. Footer "Made with care by Indranil Banerjee · Powered by Anthropic Claude · MIT-licensed" line at bottom.
 - **SEO keyword density** improved throughout — "AI marketing plugin", "Claude Code marketing", "Google AI Mode", "EU AI Act Article 50", "C2PA content provenance", "OpenAI Codex marketing", "GitHub Copilot CLI marketing", "agency operations", "multi-brand marketing", "agent skills standard".
@@ -1738,7 +1737,7 @@ Added: `marketing-automation`, `marketing-plugin`, `ai-marketing`, `ai-mode`, `a
 
 ### Added
 
-- **GitHub Copilot CLI compatibility — no new manifest needed.** Copilot CLI's plugin discovery explicitly checks `.claude-plugin/plugin.json` as one of its accepted manifest paths (alongside `.plugin/plugin.json`, `plugin.json`, and `.github/plugin/plugin.json`). DM Pro's existing Claude Code manifest is therefore directly readable by Copilot CLI. Install: `copilot plugin install indranilbanerjee/digital-marketing-pro`. The MCP catalog (`.mcp.json`), hooks (`hooks/hooks.json`), and SKILL.md auto-discovery all work natively.
+- **GitHub Copilot CLI compatibility — no new manifest needed.** Copilot CLI's plugin discovery explicitly checks `.claude-plugin/plugin.json` as one of its accepted manifest paths (alongside `.plugin/plugin.json`, `plugin.json`, and `.github/plugin/plugin.json`). DM Pro's existing Claude Code manifest is therefore directly readable by Copilot CLI. Install: `copilot plugin install teachskillofskills-ai/DigitalMarketingPro-techshu`. The MCP catalog (`.mcp.json`), hooks (`hooks/hooks.json`), and SKILL.md auto-discovery all work natively.
 - **`.antigravity/plugin.json`** — Experimental manifest for Google Antigravity 2.0 CLI (launched 19 May 2026 at Google I/O, replacing Gemini CLI). Mirrors the Gemini-CLI-extensions format that Antigravity's `agy plugin import gemini` converter accepts. Includes a `_status` field flagging the experimental nature. Will be updated against the v2-native plugin spec when Google publishes it.
 - **`docs/cross-platform-install.md` — expanded** to cover all 5 platforms with: install commands, what works natively per platform, the Antigravity caveat (spec not yet public — Gemini-extensions importer is the most reliable current path), `agy plugin import gemini` workflow, update commands per platform, and where to file platform-specific bugs.
 
@@ -2068,7 +2067,7 @@ The plugin manifest format that v3.0 inherited (and v3.1.1 / v3.2.0 carried forw
 
 #### Changes
 
-- **`repository` field**: converted from npm-shorthand object form (`{type: "git", url: "..."}`) to the string URL form Claude Code's plugin schema requires. New value: `"https://github.com/indranilbanerjee/digital-marketing-pro.git"`.
+- **`repository` field**: converted from npm-shorthand object form (`{type: "git", url: "..."}`) to the string URL form Claude Code's plugin schema requires. New value: `"https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu.git"`.
 - **`$schema` field removed**: Claude Code's plugin schema parser rejects this top-level key. Editor validation benefit isn't worth a broken install.
 
 Same fixes shipped same-day to ContentForge v3.9.2, SocialForge v1.5.2, and marketplace v2.8.0.

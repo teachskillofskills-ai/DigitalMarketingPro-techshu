@@ -1,16 +1,16 @@
 {
-  "name": "@indranilbanerjee/digital-marketing-pro",
+  "name": "@techshu/digital-marketing-pro",
   "version": "3.31.1",
   "description": "Open-source AI marketing plugin — 163 skills, 24 agents, 12-Part Strategy Flow, EU AI Act ready. Native on Claude Code, Cowork, Codex, Cursor, Copilot CLI, Antigravity, Hermes Agent, OpenClaw.",
   "license": "MIT",
-  "homepage": "https://github.com/indranilbanerjee/digital-marketing-pro",
+  "homepage": "https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu",
   "repository": {
     "type": "git",
-    "url": "https://github.com/indranilbanerjee/digital-marketing-pro.git"
+    "url": "https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu.git"
   },
   "author": {
-    "name": "Indranil Banerjee",
-    "url": "https://indranil.in"
+    "name": "Indus Net TechShu Digital Pvt. Ltd.",
+    "url": "https://techshu.ai"
   },
   "keywords": [
     "claude-code",

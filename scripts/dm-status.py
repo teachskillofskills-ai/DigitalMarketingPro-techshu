@@ -36,7 +36,7 @@ Exit codes:
     1  No brand profile / no active brand and brand argument missing
     2  Filesystem error reading state files
 
-Author: Indranil Banerjee
+Author: Indus Net TechShu Digital Pvt. Ltd.
 Plugin: Digital Marketing Pro
 """
 

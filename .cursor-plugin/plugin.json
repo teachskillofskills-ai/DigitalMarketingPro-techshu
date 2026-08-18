@@ -2,14 +2,13 @@
   "name": "digital-marketing-pro",
   "displayName": "Digital Marketing Pro",
   "version": "3.31.1",
-  "description": "Open-source AI marketing plugin for agencies & in-house teams — 163 skills, 24 agents, 12-Part Strategy Flow, Cowork team-persistent, EU AI Act Article 50 ready. Runs on Claude Code, Codex, Cursor, Copilot CLI, Antigravity, Hermes Agent, OpenClaw, Grok + 35+ more Agent Skills platforms.",
+  "description": "AI marketing operating system for TechShu delivery teams - strategy, SEO, AEO/GEO, paid media, content, CRM and analytics. 163 skills, 24 agents, 12-Part Strategy Flow, EU AI Act Article 50 ready.",
   "author": {
-    "name": "Indranil Banerjee",
-    "email": "neel@neelverse.com"
+    "name": "Indus Net TechShu Digital Pvt. Ltd."
   },
-  "publisher": "indranilbanerjee",
-  "homepage": "https://indranil.in",
-  "repository": "https://github.com/indranilbanerjee/digital-marketing-pro",
+  "publisher": "teachskillofskills-ai",
+  "homepage": "https://techshu.ai",
+  "repository": "https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu",
   "license": "MIT",
   "keywords": [
     "digital-marketing",

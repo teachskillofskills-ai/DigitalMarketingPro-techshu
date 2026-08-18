@@ -9,7 +9,7 @@
 # Tested against: Hermes Desktop v0.15.2 (June 2026 public preview)
 #
 # Install for Hermes users:
-#   hermes plugins install indranilbanerjee/digital-marketing-pro
+#   hermes plugins install teachskillofskills-ai/DigitalMarketingPro-techshu
 #
 # Hermes will clone this repo into ~/.hermes/plugins/digital-marketing-pro/,
 # read this plugin.yaml, then call register(ctx) from __init__.py which walks
@@ -21,9 +21,9 @@ description: >-
   Open-source AI marketing plugin for agencies & in-house teams. 163 skills,
   24 specialist agents, 12-Part Strategy Flow, Cowork team-persistent, EU AI
   Act Article 50 ready. Now native on Hermes Agent.
-author: Indranil Banerjee
+author: Indus Net TechShu Digital Pvt. Ltd.
 license: MIT
-homepage: https://github.com/indranilbanerjee/digital-marketing-pro
+homepage: https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu
 
 # We don't register any Hermes-side Python tools (we're a skills-only plugin).
 # Every skill directory under skills/ is auto-registered at register() time.

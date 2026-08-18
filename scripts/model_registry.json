@@ -1,5 +1,5 @@
 {
-  "$comment": "Canonical model registry for the Neelverse Marketing Suite (DMP / ContentForge / SocialForge). Update this file then run scripts/sync_model_registry.sh to distribute. The resolver consults this registry to map human-readable aliases to concrete model IDs and to warn when a deprecated model is being used. See refresh_models.py to poll provider APIs for drift.",
+  "$comment": "Canonical model registry for the TechShu Marketing Suite (DMP / ContentForge / SocialForge). Update this file then run scripts/sync_model_registry.sh to distribute. The resolver consults this registry to map human-readable aliases to concrete model IDs and to warn when a deprecated model is being used. See refresh_models.py to poll provider APIs for drift.",
   "schema_version": "1.0",
   "last_updated": "2026-07-30",
   "last_updated_by": "cross-registry reconciliation: GPT-5.6/Claude-5 alias re-points and 5.5/5.4 supersessions (verified in the CF July-29 audit) applied to the canonical registry",

@@ -1,6 +1,6 @@
 """Model-registry reconciliation test.
 
-DMP's scripts/model_registry.json is the canonical superset of the Neelverse
+DMP's scripts/model_registry.json is the canonical superset of the TechShu
 Marketing Suite registry: it carries every entry ContentForge uses PLUS a small,
 documented set of marketing-suite-specific model families. This test enforces:
 

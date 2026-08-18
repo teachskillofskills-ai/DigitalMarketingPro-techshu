@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 # sync_model_registry.sh
 # ======================
-# Distributes the canonical Neelverse Marketing Suite model registry from this
+# Distributes the canonical TechShu Marketing Suite model registry from this
 # repo (Digital Marketing Pro) to the sibling content-plugin repos.
 #
 # DMP's model_registry.json is the canonical superset: it carries every entry

@@ -642,4 +642,4 @@ The methodology is defined across 23 reference documents in `skills/context-engi
 
 ---
 
-*Digital Marketing Pro v3.0 — The 12-Part Engagement Methodology. Built by [Indranil Banerjee](https://github.com/indranilbanerjee). Issues and contributions welcome.*
+*Digital Marketing Pro v3.0 — The 12-Part Engagement Methodology. Maintained by Indus Net TechShu Digital Pvt. Ltd. Originally created by Indranil Banerjee, MIT licensed; TechShu's version is maintained separately.*

@@ -67,7 +67,7 @@ If the brand has not opted in, the call is a clean no-op (returns
 status: "no_op"). Skills should not surface no_op as an error — it is
 the user's choice not to opt into ambient learning capture.
 
-Author: Indranil Banerjee
+Author: Indus Net TechShu Digital Pvt. Ltd.
 Plugin: Digital Marketing Pro
 """
 

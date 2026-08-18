@@ -1,21 +1,21 @@
 {
   "name": "digital-marketing-pro",
   "owner": {
-    "name": "Indranil Banerjee",
-    "url": "https://github.com/indranilbanerjee"
+    "name": "Indus Net TechShu Digital Pvt. Ltd.",
+    "url": "https://github.com/teachskillofskills-ai"
   },
   "description": "Marketplace source for the Digital Marketing Pro plugin",
   "plugins": [
     {
       "name": "digital-marketing-pro",
-      "description": "Open-source AI marketing plugin for agencies & in-house teams — 163 skills, 24 agents, 12-Part Strategy Flow, Cowork team-persistent, EU AI Act Article 50 ready. Runs on Claude Code, Codex, Cursor, Copilot CLI, Antigravity, Hermes Agent, OpenClaw, Grok + 35+ more Agent Skills platforms.",
+      "description": "AI marketing operating system for TechShu delivery teams - strategy, SEO, AEO/GEO, paid media, content, CRM and analytics. 163 skills, 24 agents, 12-Part Strategy Flow, EU AI Act Article 50 ready.",
       "version": "3.31.1",
       "category": "marketing",
       "source": {
         "source": "url",
-        "url": "https://github.com/indranilbanerjee/digital-marketing-pro.git"
+        "url": "https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu.git"
       },
-      "homepage": "https://github.com/indranilbanerjee/digital-marketing-pro",
+      "homepage": "https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu",
       "keywords": [
         "digital-marketing",
         "marketing-strategy",
