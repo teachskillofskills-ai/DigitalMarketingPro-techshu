@@ -6,6 +6,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). This pr
 
 ---
 
+> **TechShu line.** This repository is the TechShu-maintained line of the plugin,
+> rebranded in August 2026 by Indus Net TechShu Digital Pvt. Ltd. Entries below
+> predating the rebrand describe the original releases and may reference features
+> (sponsor links, star CTAs, personal social handles, the suite-brand keyword)
+> that the TechShu line has since removed.
+
 ## [3.31.1] - 2026-08-17
 
 ### Fixed — all five open community issues, each verified by reproduction first
@@ -1664,13 +1670,13 @@ GitHub computes a "Community Standards" score under the repo's Insights tab. Rep
 
 ### Fixed
 
-- The v3.7.1 "Star + share" CTA at the bottom of the maintainer section used `@neelverse` as a social-handle suggestion. That's the **product/suite brand name**, not Indranil's personal handle. Corrected to use the author's actual handles across LinkedIn and X:
+- The v3.7.1 "Star + share" CTA at the bottom of the maintainer section used the suite brand name as a social-handle suggestion instead of the author's actual handles. Corrected:
   - **LinkedIn** and **X** rows added to the maintainer block.
 
 ### Changed
 
 - "About the maintainer" links block now includes LinkedIn and X rows alongside Website, GitHub, Other plugins, Discussions, and Issues — so readers can one-click follow the author on the platform they prefer.
-- The keyword `"neelverse"` in `plugin.json` stays — it's a brand/marketplace-search keyword, not a social handle.
+- The suite-brand keyword in `plugin.json` stayed at the time (a marketplace-search keyword, not a social handle); the TechShu rebrand later removed it.
 - "TechShu Marketing Suite" branding throughout the README is preserved — that's the correct name for the bundle of DMP + ContentForge + SocialForge.
 
 ### Compatibility
@@ -1697,7 +1703,7 @@ GitHub computes a "Community Standards" score under the repo's Insights tab. Rep
 - **AEO/GEO section restructured** — "6-platform audit standard" called out (was 5 before AI Mode added in v3.5). Lists exact platforms (ChatGPT, Perplexity, Google AI Mode, Google AI Overviews, Gemini, Microsoft Copilot).
 - **New "About the maintainer" section** — author block with website link ([techshu.ai](https://techshu.ai)), GitHub, other TechShu plugins, Discussions, Issues, and the "why this plugin exists" story.
 - **New FAQ entries** — comparison vs LangChain marketing templates / CrewAI marketing crews, per-engagement API cost ($15–40), cross-platform support clarification, "is this an Anthropic product?" disambiguation.
-- **⭐ Star CTAs** added at hero, maintainer section, and footer. Footer "Made with care by Indranil Banerjee · Powered by Anthropic Claude · MIT-licensed" line at bottom.
+- **⭐ Star CTAs** added at hero, maintainer section, and footer. Footer "Made with care" credit line at bottom.
 - **SEO keyword density** improved throughout — "AI marketing plugin", "Claude Code marketing", "Google AI Mode", "EU AI Act Article 50", "C2PA content provenance", "OpenAI Codex marketing", "GitHub Copilot CLI marketing", "agency operations", "multi-brand marketing", "agent skills standard".
 
 #### Stale asset counts swept across docs
@@ -1720,7 +1726,7 @@ Audit method: JSON-validated all 6 manifest/config files (`.claude-plugin/plugin
 
 #### Plugin manifest keywords expanded for GitHub + marketplace search
 
-Added: `marketing-automation`, `marketing-plugin`, `ai-marketing`, `ai-mode`, `ai-overviews`, `generative-engine-optimization`, `answer-engine-optimization`, `google-ai-mode`, `performance-max`, `advantage-plus`, `content-strategy`, `brand-guidelines`, `gdpr`, `ccpa`, `eu-ai-act`, `article-50`, `c2pa`, `content-provenance`, `synthid`, `deepfake-disclosure`, `claude-code-plugin`, `claude-skills`, `agent-skills`, `anthropic-claude`, `openai-codex`, `cursor-plugin`, `github-copilot`, `antigravity`, `mcp`, `model-context-protocol`, `gemini`, `nano-banana-pro`, `veo-3`, `gemini-omni`, `neelverse`. Total keyword count: 26 → 61.
+Added: `marketing-automation`, `marketing-plugin`, `ai-marketing`, `ai-mode`, `ai-overviews`, `generative-engine-optimization`, `answer-engine-optimization`, `google-ai-mode`, `performance-max`, `advantage-plus`, `content-strategy`, `brand-guidelines`, `gdpr`, `ccpa`, `eu-ai-act`, `article-50`, `c2pa`, `content-provenance`, `synthid`, `deepfake-disclosure`, `claude-code-plugin`, `claude-skills`, `agent-skills`, `anthropic-claude`, `openai-codex`, `cursor-plugin`, `github-copilot`, `antigravity`, `mcp`, `model-context-protocol`, `gemini`, `nano-banana-pro`, `veo-3`, `gemini-omni`. Total keyword count: 26 → 61.
 
 ### Compatibility
 
