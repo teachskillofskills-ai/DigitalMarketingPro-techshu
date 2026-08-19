@@ -1,7 +1,7 @@
 {
   "name": "@techshu/digital-marketing-pro",
   "version": "3.31.1",
-  "description": "Open-source AI marketing plugin — 163 skills, 24 agents, 12-Part Strategy Flow, EU AI Act ready. Native on Claude Code, Cowork, Codex, Cursor, Copilot CLI, Antigravity, Hermes Agent, OpenClaw.",
+  "description": "AI marketing plugin for TechShu delivery teams — 163 skills, 24 agents, 12-Part Strategy Flow, EU AI Act ready. Native on Claude Code, Cowork, Codex, Cursor, Copilot CLI, Antigravity, Hermes Agent, OpenClaw.",
   "license": "MIT",
   "homepage": "https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu",
   "repository": {
@@ -31,8 +31,12 @@
   ],
   "openclaw": {
     "type": "bundle",
-    "extensions": ["./skills/"],
-    "skills": ["./skills"],
+    "extensions": [
+      "./skills/"
+    ],
+    "skills": [
+      "./skills"
+    ],
     "compat": {
       "pluginApi": ">=2026.3.24-beta.2"
     },

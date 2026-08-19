@@ -48,6 +48,10 @@ def _load(name, filename):
     return mod
 
 
+_HAS_DEP = importlib.util.find_spec("nltk") is not None
+_DEP_MSG = "nltk not installed (brand-voice-scorer.py scores with it)"
+
+
 class TestGatesAreStatedInTheUnitTheyAreMeasuredIn(unittest.TestCase):
     def test_voice_gate_uses_the_scorer_scale(self):
         """`distance` is bounded at 1.0, so a threshold of 1.5 is unreachable."""
@@ -68,6 +72,7 @@ class TestGatesAreStatedInTheUnitTheyAreMeasuredIn(unittest.TestCase):
         self.assertIn(f"`distance` ≤ {m.group(1)}", CONTENT_ENGINE,
                       f"scorer flags above {m.group(1)}; the gate must say the same number")
 
+    @unittest.skipUnless(_HAS_DEP, _DEP_MSG)
     def test_a_distance_of_1_5_is_not_even_reachable(self):
         scorer = _load("dmp_voice_scorer", "brand-voice-scorer.py")
         self.assertLessEqual(scorer.dimension_distance(0.0, 1.0), 1.0)
@@ -115,6 +120,7 @@ class TestTheGeneratorAndTheValidatorAgree(unittest.TestCase):
             self.assertIn(key, setup_src, f"generator no longer writes {key}")
 
 
+@unittest.skipUnless(_HAS_DEP, _DEP_MSG)
 class TestRemediationPointsTowardTheTarget(unittest.TestCase):
     def test_advice_is_the_opposite_of_how_the_content_reads(self):
         scorer = _load("dmp_voice_scorer_2", "brand-voice-scorer.py")

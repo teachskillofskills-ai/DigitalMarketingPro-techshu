@@ -15,9 +15,7 @@ Prepared 2026-08-16. Items marked **[owner action]** need the account holder.
 
 - **Display name:** Digital Marketing Pro
 - **Category:** Marketing / Business
-- **Short description:** Complete digital marketing operating system — 163
-  skills and 24 agents covering strategy, content, SEO/AEO, paid media,
-  analytics, and compliance.
+- **Short description:** Digital marketing operating system for TechShu delivery teams — 163 skills and 24 agents covering strategy, content, SEO/AEO, paid media, analytics, and compliance.
 - **Long description:** A full marketing department in plugin form: strategy
   and planning, a gated content engine with fact-checking and a measured
   humanize gate, SEO/AEO/GEO, paid media with provenance-stamped benchmarks

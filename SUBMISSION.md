@@ -1,9 +1,9 @@
 # Anthropic Software Directory — Submission Packet
 
-> **⚠️ Historical snapshot.** This packet was first drafted for the **v3.4.0** submission (May 2026). The current shipping release is **v3.17.0** with **163 skills, 24 specialist agents, 18 top-level commands, and ~86 Python scripts**. The counts and agent list below have been refreshed to the current release; treat CHANGELOG.md + README.md as the authoritative source for exact numbers before any re-submission.
+> **⚠️ Historical snapshot.** This packet was first drafted for the **v3.4.0** submission (May 2026). The current shipping release is **v3.31.1** with **163 skills, 24 specialist agents, 18 top-level commands, and ~86 Python scripts**. The counts and agent list below have been refreshed to the current release; treat CHANGELOG.md + README.md as the authoritative source for exact numbers before any re-submission.
 
 **Plugin:** Digital Marketing Pro
-**Current version:** 3.17.0 (originally submitted at 3.4.0)
+**Current version:** 3.31.1 (originally submitted at 3.4.0)
 **Submitter:** Indus Net TechShu Digital Pvt. Ltd.
 **Repository:** https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu
 **Marketplace:** https://github.com/teachskillofskills-ai/techshu-marketplace
